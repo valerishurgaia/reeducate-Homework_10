@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body {
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: 32px auto 0;
+}
+
+#container > :first-child {
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #BDBDBD;
+    margin-top: 58px;
+}
+
+#navbar > li {
+    list-style: none;
+    width: 100%;
+    padding: 0 4vw;
+}
+
+#navbar > li > button {
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    height: 100%;
+    text-align: center;
+    padding: 18px;
+    background-color: transparent;
+    border: none;
+}
+
+#write_tasks {
+    display: flex;
+    margin-top: 18px;
+    gap: 25px;
+}
+
+#write_tasks > input, #write_tasks > button {
+    border-radius: 12px;
+}
+
+#add_details {
+    flex: 4;
+    border: 1px solid #BDBDBD;
+    padding-left: 12px; 
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+#write_tasks > button {
+    flex: 1;
+    padding: 20px 0;
+    background: #2F80ED;
+    box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+    border: none;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#write_tasks > button:hover {
+    background-color: #0f5cc0;
+    box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+    transition-duration: 0.4s;
+}
+
+#results {
+    display: flex;
+    width: 50%;
+    margin:5px auto 0;
+}
+
+.todo {
+    display: flex;
+    margin-top: 27px;
+}
+
+.todo-task {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    flex: 1;
+    padding-left: 7px;
+}
+
+.todo-list {
+    width: 100%;
+}
+
+.complete-btn {
+    width: 24px;
+    cursor: pointer;
+}
+
+.trash-btn {
+    width: 24px;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    border: none;
+    font-weight: 900;
+    border-radius: 4px;
+}
+
+.completed > .todo-task {
+    text-decoration: line-through;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <title>#todo</title>
+</head>
+<body>
+    <div id="container">
+        <h1>#todo</h1>
+        <ul  name="todos" id="navbar">
+            <li ><button value = "all" class="filther" id="all">All</button></li>
+            <li ><button value = "active" class="filther" id="active">Active</button></li>
+            <li ><button value = "completed" class="filther" id="completed">Completed</li>
+        </ul>
+        <form id="write_tasks">
+            <input id="add_details" type="text" placeholder="add details">
+            <button id= "submit_button">Add</button>
+        </form>
+        </div>
+        <div id="results">
+            <ul class="todo-list">
+                
+            </ul>
+        </div>
+    <script src="./script1.js"></script>
+</body>
+</html>
